@@ -21,6 +21,8 @@
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */; };
 		6EE56AF024D931A6000CA6C7 /* AViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE56AEE24D931A6000CA6C7 /* AViewController.h */; };
 		6EE56AF124D931A6000CA6C7 /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56AEF24D931A6000CA6C7 /* AViewController.m */; };
+		6EE56B1624DD252F000CA6C7 /* Target_A.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE56B1424DD252F000CA6C7 /* Target_A.h */; };
+		6EE56B1724DD252F000CA6C7 /* Target_A.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE56B1524DD252F000CA6C7 /* Target_A.m */; };
 		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */; };
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -90,6 +92,8 @@
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6EE56AEE24D931A6000CA6C7 /* AViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AViewController.h; path = A_section/Classes/AViewController.h; sourceTree = "<group>"; };
 		6EE56AEF24D931A6000CA6C7 /* AViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AViewController.m; path = A_section/Classes/AViewController.m; sourceTree = "<group>"; };
+		6EE56B1424DD252F000CA6C7 /* Target_A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_A.h; sourceTree = "<group>"; };
+		6EE56B1524DD252F000CA6C7 /* Target_A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_A.m; sourceTree = "<group>"; };
 		7088D98DC381166BE3FCADC4363562E5 /* Pods-A_section_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-A_section_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		715038269860D77C91B110C0D1C11E17 /* Pods-A_section_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-A_section_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -169,6 +173,7 @@
 		1BCAF6C4370BEEA288C8237EC495E114 /* A_section */ = {
 			isa = PBXGroup;
 			children = (
+				6EE56B1324DD2516000CA6C7 /* Target_A */,
 				6EE56AEE24D931A6000CA6C7 /* AViewController.h */,
 				6EE56AEF24D931A6000CA6C7 /* AViewController.m */,
 				F5D818D05B338D7E5681236EB4F66D57 /* Pod */,
@@ -227,6 +232,15 @@
 				AF9D48685CC9021370172266B096B3F1 /* Pods-A_section_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6EE56B1324DD2516000CA6C7 /* Target_A */ = {
+			isa = PBXGroup;
+			children = (
+				6EE56B1424DD252F000CA6C7 /* Target_A.h */,
+				6EE56B1524DD252F000CA6C7 /* Target_A.m */,
+			);
+			path = Target_A;
 			sourceTree = "<group>";
 		};
 		7DE5752EED0A4C4A430975244947611A /* iOS */ = {
@@ -386,6 +400,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EE56B1624DD252F000CA6C7 /* Target_A.h in Headers */,
 				E125E330C932AE12BEA273959FCE1A4D /* A_section-umbrella.h in Headers */,
 				6EE56AF024D931A6000CA6C7 /* AViewController.h in Headers */,
 			);
@@ -552,6 +567,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EE56AF124D931A6000CA6C7 /* AViewController.m in Sources */,
+				6EE56B1724DD252F000CA6C7 /* Target_A.m in Sources */,
 				2B69789524322A52B030F547B6DB9B26 /* A_section-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

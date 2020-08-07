@@ -6,7 +6,6 @@
 //
 
 #import "AViewController.h"
-#import "BViewController.h"
 #import <HandyFrame/UIView+LayoutMethods.h>
 
 @interface AViewController ()
@@ -36,8 +35,9 @@
 #pragma mark - event response
 - (void)didTappedPushBViewControllerButton:(UIButton *)button
 {
-    BViewController *viewController = [[BViewController alloc] initWithContentText:@"hello, world!"];
-    [self.navigationController pushViewController:viewController animated:YES];
+//    BViewController *viewController = [[BViewController alloc] initWithContentText:@"hello, world!"];
+//    [self.navigationController pushViewController:viewController animated:YES];
+    NSLog(@"你好");
 }
 
 #pragma mark - getters and setters
